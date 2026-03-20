@@ -22,10 +22,10 @@ git clone https://github.com/yaap/vendor_oneplus_guacamole -b sixteen vendor/one
 git clone https://github.com/yaap/vendor_oneplus_sm8150-common -b sixteen vendor/oneplus/sm8150-common --depth=1
 git clone https://github.com/shahzebqureshi/ak vendor/infinity-priv/keys --depth=1
 
+
 # Build
+export TARGET_SURFACEFLINGER_UDFPS_LIB=""
 . build/envsetup.sh
 export SKIP_ABI_CHECKS=true
-export TARGET_SURFACEFLINGER_UDFPS_LIB=""
-make installclean
 lunch infinity_guacamole-userdebug
 m bacon
