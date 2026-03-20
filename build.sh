@@ -23,7 +23,7 @@ git clone https://github.com/ShahzebQureshi/ak vendor/infinity-priv/keys --depth
 # Clone hardware LAST so resync can't delete it
 git clone https://github.com/ShahzebQureshi/hardware_oneplus -b sixteen hardware/oneplus --depth=1
 
-git clone https://github.com/LineageOS/android_hardware_lineage_interfaces -b lineage-23.2 hardware/lineage/interfaces --depth=1
+# git clone https://github.com/LineageOS/android_hardware_lineage_interfaces -b lineage-23.2 hardware/lineage/interfaces --depth=1
 
 # Build
 export TARGET_INIT_VENDOR_LIB=""
