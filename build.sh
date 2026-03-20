@@ -2,7 +2,8 @@
 rm -rf .repo/local_manifests
 repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
 
-# Clone hardware BEFORE resync (namespace fix)
+# Clone hardware BEFORE resync 
+rm -rf hardware/oneplus
 git clone https://github.com/yaap/hardware_oneplus -b sixteen hardware/oneplus --depth=1
 
 /opt/crave/resync.sh
@@ -26,6 +27,7 @@ git clone https://github.com/shahzebqureshi/ak vendor/infinity-priv/keys --depth
 # Build
 . build/envsetup.sh
 export SKIP_ABI_CHECKS=true
+export TARGET_SURFACEFLINGER_UDFPS_LIB=""
 make installclean
-lunch infinity_guacamole-userdebug
+lunch infinity_guacamole-bp4a-userdebug
 m bacon
