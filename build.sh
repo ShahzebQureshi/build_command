@@ -19,7 +19,7 @@ git clone https://github.com/ShahzebQureshi/device_oneplus_sm8150-common -b sixt
 git clone https://github.com/yaap/kernel_oneplus_sm8150 -b sixteen kernel/oneplus/sm8150 --depth=1
 git clone https://github.com/yaap/vendor_oneplus_guacamole -b sixteen vendor/oneplus/guacamole --depth=1
 git clone https://github.com/yaap/vendor_oneplus_sm8150-common -b sixteen vendor/oneplus/sm8150-common --depth=1
-git clone https://github.com/ShahzebQureshi/ak vendor/infinity-priv/keys --depth=1
+git clone https://github.com/ShahzebQureshi/ak vendor/lineage-priv/keys --depth=1
 # Clone hardware LAST so resync can't delete it
 git clone https://github.com/ShahzebQureshi/hardware_oneplus -b sixteen hardware/oneplus --depth=1
 
