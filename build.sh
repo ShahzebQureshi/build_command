@@ -17,6 +17,8 @@ rm -rf device/qcom/common
 rm -rf vendor/qcom/common
 rm -rf device/qcom/qssi
 rm -rf packages/apps/KProfiles
+rm -rf hardware/qcom/display
+rm -rf device/qcom/sepolicy_vndr
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/device_oneplus_guacamole -b sixteen-infinity device/oneplus/guacamole --depth=1
@@ -30,8 +32,17 @@ git clone https://github.com/yaap/device_qcom_common -b sixteen device/qcom/comm
 git clone https://gitlab.com/yaosp/vendor_qcom_common -b sixteen vendor/qcom/common --depth=1
 git clone https://github.com/AOSPA/android_device_qcom_qssi -b vauxite device/qcom/qssi --depth=1
 git clone https://github.com/yaap/packages_apps_KProfiles -b sixteen packages/apps/KProfiles --depth=1
+git clone https://github.com/yaap/hardware_qcom-caf_sm8150_display -b sixteen hardware/qcom/display --depth=1
+git clone https://github.com/LineageOS/android_device_qcom_sepolicy_vndr -b lineage-23.2-legacy-um device/qcom/sepolicy_vndr --depth=1
 # Clone hardware LAST
-git clone https://github.com/LineageOS/android_hardware_oneplus -b lineage-23.2 hardware/oneplus --depth=1
+git clone https://github.com/LineageOS/android_hardware_oneplus hardware/oneplus --depth=1
+
+
+# Set up build environment
+export BUILD_USERNAME=ShahzebQureshi
+export BUILD_HOSTNAME=Linux
+export TZ="Asia/Karachi"
+
 
 # Build
 export TARGET_INIT_VENDOR_LIB=""
