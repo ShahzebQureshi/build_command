@@ -32,7 +32,7 @@ git clone https://github.com/yaap/vendor_qcom_opensource_core-utils -b sixteen v
 git clone https://github.com/yaap/device_qcom_common -b sixteen device/qcom/common --depth=1
 git clone https://gitlab.com/yaosp/vendor_qcom_common -b sixteen vendor/qcom/common --depth=1
 git clone https://github.com/yaap/packages_apps_KProfiles -b sixteen packages/apps/KProfiles --depth=1
-git clone https://github.com/yaap/hardware_qcom-caf_sm8150_display -b sixteen hardware/qcom/display --depth=1
+git clone https://github.com/LineageOS/android_hardware_qcom_sm8150_display -b lineage-23.2 hardware/qcom/display --depth=1
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_media -b sixteen hardware/qcom/media --depth=1
 git clone https://github.com/yaap/hardware_qcom-caf_sm8150_audio -b sixteen hardware/qcom/audio --depth=1
 
