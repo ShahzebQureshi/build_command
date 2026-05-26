@@ -1,6 +1,6 @@
 #!/bin/bash
 rm -rf .repo/local_manifests
-repo init --no-repo-verify --git-lfs -u https://github.com/ProjectInfinity-X/manifest -b 16 -g default,-mips,-darwin,-notdefault
+repo init --no-repo-verify --git-lfs -u https://github.com/LineageOS/android.git -b tiramisu -g default,-mips,-darwin,-notdefault
 /opt/crave/resync.sh
 
 # Clean old dirs
