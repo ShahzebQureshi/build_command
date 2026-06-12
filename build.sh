@@ -22,6 +22,11 @@ git clone https://github.com/QuinceROMs/vendor_oneplus_sm8150-common-1 -b 16-d-c
 # Clone hardware LAST
 git clone https://github.com/QuinceROMs/hardware_oneplus-1 -b 16-cam hardware/oplus --depth=1
 
+
+sed -i 's/libaudioroute-v34/libaudioroutev2/g' vendor/oneplus/sm8150-common/Android.bp
+sed -i '/"libcrypto_shim",/d' vendor/oneplus/sm8150-common/Android.bp
+
+#
 # Set up build environment
 export BUILD_USERNAME=ShahzebQureshi
 export BUILD_HOSTNAME=Linux
