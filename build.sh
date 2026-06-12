@@ -11,6 +11,7 @@ rm -rf kernel/oneplus/sm8150
 rm -rf vendor/oneplus/guacamole
 rm -rf vendor/oneplus/sm8150-common
 rm -rf hardware/oplus
+rm -rf hardware/dolby
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/device_oneplus_guacamole-Evox -b Infinity device/oneplus/guacamole --depth=1
@@ -23,11 +24,11 @@ git clone https://github.com/Pong-Development/hardware_dolby hardware/dolby --de
 # Clone hardware LAST
 git clone https://github.com/QuinceROMs/hardware_oneplus-1 -b 16-cam hardware/oplus --depth=1
 
-
-sed -i 's/libaudioroute-v34/libaudioroutev2/g' vendor/oneplus/sm8150-common/Android.bp
+# Fix stale vendor blob deps
+sed -i 's/"libaudioroute-v34"/"libaudioroutev2"/g' vendor/oneplus/sm8150-common/Android.bp
+sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' vendor/oneplus/sm8150-common/Android.bp
 sed -i '/"libcrypto_shim",/d' vendor/oneplus/sm8150-common/Android.bp
 
-#
 # Set up build environment
 export BUILD_USERNAME=ShahzebQureshi
 export BUILD_HOSTNAME=Linux
