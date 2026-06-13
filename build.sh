@@ -28,6 +28,7 @@ git clone https://github.com/QuinceROMs/hardware_oneplus-1 -b 16-cam hardware/op
 sed -i 's/"libaudioroute-v34"/"libaudioroutev2"/g' vendor/oneplus/sm8150-common/Android.bp
 sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' vendor/oneplus/sm8150-common/Android.bp
 sed -i '/"libcrypto_shim",/d' vendor/oneplus/sm8150-common/Android.bp
+sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' hardware/dolby/Android.bp
 
 # Set up build environment
 export BUILD_USERNAME=ShahzebQureshi
