@@ -15,7 +15,7 @@ rm -rf vendor/infinity-priv/keys
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/android_device_xiaomi_spes -b infinity device/xiaomi/spes --depth=1
-git clone https://github.com/muralivijay/vendor_xiaomi_spes -b 16-QPR2 vendor/xiaomi/spes --depth=1
+git clone https://github.com/muralivijay/vendor_xiaomi_spes -b 16-QPR2-GO vendor/xiaomi/spes --depth=1
 git clone https://github.com/muralivijay/kernel_xiaomi_spes -b main-a16-sm8250-base kernel/xiaomi/sm6225 --depth=1
 #git clone https://github.com/GustavoMends/vendor_GoogleCamera -b sg vendor/GoogleCamera --depth=1
 git clone https://github.com/ShahzebQureshi/ak vendor/infinity-priv/keys --depth=1
