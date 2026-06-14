@@ -29,6 +29,8 @@ sed -i 's/"libaudioroute-v34"/"libaudioroutev2"/g' vendor/oneplus/sm8150-common/
 sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' vendor/oneplus/sm8150-common/Android.bp
 sed -i '/"libcrypto_shim",/d' vendor/oneplus/sm8150-common/Android.bp
 sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' hardware/dolby/Android.bp
+sed -i '/"libinput_shim",/d' vendor/oneplus/sm8150-common/Android.bp
+sed -i '/"android.hidl.base@1.0",/d' vendor/oneplus/sm8150-common/Android.bp
 
 # Set up build environment
 export BUILD_USERNAME=ShahzebQureshi
