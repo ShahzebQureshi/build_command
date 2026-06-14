@@ -12,6 +12,7 @@ rm -rf vendor/oneplus/guacamole
 rm -rf vendor/oneplus/sm8150-common
 rm -rf hardware/oplus
 rm -rf hardware/dolby
+rm -rf vendor/infinity-priv/keys
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/device_oneplus_guacamole-Evox -b Infinity device/oneplus/guacamole --depth=1
