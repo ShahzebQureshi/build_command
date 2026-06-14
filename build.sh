@@ -19,6 +19,7 @@ git clone https://github.com/QuinceROMs/device_oneplus_sm8150-common-1 -b 16-d-c
 git clone https://github.com/QuinceROMs/android_kernel_oneplus_sm8150 -b 16-c kernel/oneplus/sm8150 --depth=1
 git clone https://github.com/ShahzebQureshi/proprietary_vendor_oneplus_guacamole -b Infinity vendor/oneplus/guacamole --depth=1
 git clone https://github.com/QuinceROMs/vendor_oneplus_sm8150-common-1 -b 16-d-cam vendor/oneplus/sm8150-common --depth=1
+git clone https://github.com/ShahzebQureshi/ak vendor/lineage-priv/keys --depth=1
 #git clone https://github.com/Pong-Development/hardware_dolby hardware/dolby --depth=1
 
 # Clone hardware LAST
