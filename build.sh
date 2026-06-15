@@ -27,15 +27,15 @@ git clone https://github.com/Pong-Development/hardware_dolby hardware/dolby --de
 git clone https://github.com/QuinceROMs/hardware_oneplus-1 -b 16-cam hardware/oplus --depth=1
 
 # Fix stale vendor blob deps
-sed -i 's/"libaudioroute-v34"/"libaudioroutev2"/g' vendor/oneplus/sm8150-common/Android.bp
-sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' vendor/oneplus/sm8150-common/Android.bp
-sed -i '/"libcrypto_shim",/d' vendor/oneplus/sm8150-common/Android.bp
-sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' hardware/dolby/Android.bp
-sed -i '/"libinput_shim",/d' vendor/oneplus/sm8150-common/Android.bp
-sed -i '/"android.hidl.base@1.0",/d' vendor/oneplus/sm8150-common/Android.bp
+#sed -i 's/"libaudioroute-v34"/"libaudioroutev2"/g' vendor/oneplus/sm8150-common/Android.bp
+#sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' vendor/oneplus/sm8150-common/Android.bp
+#sed -i '/"libcrypto_shim",/d' vendor/oneplus/sm8150-common/Android.bp
+#sed -i 's/"libstagefright_foundation-v33"/"libstagefright_foundation"/g' hardware/dolby/Android.bp
+#sed -i '/"libinput_shim",/d' vendor/oneplus/sm8150-common/Android.bp
+#sed -i '/"android.hidl.base@1.0",/d' vendor/oneplus/sm8150-common/Android.bp
 
 # Disable ELF dependency checks for all prebuilt vendor blobs (stale DT_NEEDED entries)
-sed -i '/proprietary: true,/a\    check_elf_files: false,' vendor/oneplus/sm8150-common/Android.bp
+#sed -i '/proprietary: true,/a\    check_elf_files: false,' vendor/oneplus/sm8150-common/Android.bp
 
 # Set up build environment
 export BUILD_USERNAME=ShahzebQureshi
