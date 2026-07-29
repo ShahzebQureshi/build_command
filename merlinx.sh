@@ -16,7 +16,7 @@ rm -rf vendor/infinity-priv/keys
 
 # Clone sources
 git clone https://github.com/ShahzebQureshi/android_device_xiaomi_merlinx -b luna device/xiaomi/merlinx --depth=1
-git clone https://github.com/mt6768-dev/android_device_xiaomi_mt6768-common -b lineage-23.2 device/xiaomi/mt6768-common --depth=1
+git clone https://github.com/ShahzebQureshi/android_device_xiaomi_mt6768-common -b luna device/xiaomi/mt6768-common --depth=1
 git clone https://github.com/mt6768-dev/android_kernel_xiaomi_mt6768 -b lineage-23.2 kernel/xiaomi/mt6768 --depth=1
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_merlinx -b lineage-23.2 vendor/xiaomi/merlinx --depth=1
 git clone https://github.com/mt6768-dev/proprietary_vendor_xiaomi_mt6768-common -b lineage-23.2 vendor/xiaomi/mt6768-common --depth=1
@@ -31,5 +31,5 @@ export TZ="Asia/Karachi"
 # Build
 . build/envsetup.sh
 export SKIP_ABI_CHECKS=true
-breakfast merlinx-userdebug
+lunch lineage-merlinx-userdebug
 mka bacon
