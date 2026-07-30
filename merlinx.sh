@@ -31,5 +31,5 @@ export TZ="Asia/Karachi"
 # Build
 . build/envsetup.sh
 export SKIP_ABI_CHECKS=true
-lunch lineage-merlinx-userdebug
+lunch lineage_merlinx-userdebug
 mka bacon
